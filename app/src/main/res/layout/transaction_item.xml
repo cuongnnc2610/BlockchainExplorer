@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 BTC"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"/>
+    <TextView
+        android:id="@+id/tv_txid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="62ca89ae5475e0ec6899884cfbddcbbfa7735280eb8c356d69cdfb49eab36b5c"
+        android:textColor="@color/dark_gray"
+        tools:ignore="HardcodedText" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="15dp"
+        android:background="@color/light_gray"/>
+</LinearLayout>

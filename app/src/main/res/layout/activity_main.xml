@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_blocks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv_blocks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="30dp"
+                    android:text="@string/latest_blocks"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/oversize_text"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_blocks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:overScrollMode="never">
+                </androidx.recyclerview.widget.RecyclerView>
+                <ProgressBar
+                    android:id="@+id/pb_blocks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <include layout="@layout/scroll_to_the_top_floating_action_button"/>
+</RelativeLayout>

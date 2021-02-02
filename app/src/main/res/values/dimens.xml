@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_text">14sp</dimen>
+    <dimen name="highlight_text">16sp</dimen>
+    <dimen name="header_text">16sp</dimen>
+    <dimen name="oversize_text">26sp</dimen>
+</resources>

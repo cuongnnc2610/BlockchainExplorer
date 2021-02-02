@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:layout_gravity="center_horizontal">
+    <LinearLayout
+        android:id="@+id/ll_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/height"
+                    android:textColor="@color/gray"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:id="@+id/tv_timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2021-01-22 09:09:09"
+                    android:textColor="@color/gray"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="HardcodedText,RelativeOverlap" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999999"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/highlight_text"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/block_hash"
+                android:textColor="@color/gray"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_hash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000000000000000091620215fe6de1162ea14ae0dde1aa91b84bc94f15595"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/highlight_text"
+                android:textStyle="bold"
+                android:textColor="@color/dark_gray"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_left_corner_blue"
+            android:orientation="horizontal"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="9"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/weight_kwu"/>
+                <TextView
+                    android:id="@+id/tv_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/highlight_text"
+                    android:textStyle="bold"
+                    android:text="9999.99"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/size_kb"/>
+                <TextView
+                    android:id="@+id/tv_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/highlight_text"
+                    android:textStyle="bold"
+                    android:text="9999.999"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/transactions"/>
+                <TextView
+                    android:id="@+id/tv_transactions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/highlight_text"
+                    android:textStyle="bold"
+                    android:text="9999"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

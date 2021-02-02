@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Blockchain Explorer</string>
+    <string name="latest_blocks">Latest Blocks</string>
+    <string name="block_details">Block Details</string>
+    <string name="height">Height</string>
+    <string name="block_hash">Block Hash</string>
+    <string name="weight_kwu">Weight (kwu)</string>
+    <string name="size_kb">Size (kb)</string>
+    <string name="transactions">Transactions</string>
+    <string name="block">Block</string>
+    <string name="previous_block_hash">Previous Block Hash</string>
+    <string name="time">Time</string>
+    <string name="blockStatus">Status</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="version">Version</string>
+    <string name="merkle_root">Merkle Root</string>
+    <string name="bits">Bits</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="nonce">Nonce</string>
+
+    <!-- Block Status -->
+    <string name="in_best_chain">In best chain</string>
+    <string name="not_in_best_chain">Not in best chain</string>
+
+    <string name="prefix_of_hexadecimal">0x%1$s</string>
+    <string name="btc_value">%1$s BTC</string>
+
+    <!-- Image Description -->
+    <string name="back">Back</string>
+    <string name="up">Up</string>
+</resources>
